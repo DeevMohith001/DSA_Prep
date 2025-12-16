@@ -32,7 +32,7 @@ public class vid12_06_ArrayList_Example {
 
         // get item at any index
         for (int i = 0; i < 5; i++) {
-            System.out.println(list.get(i));
+            System.out.println(list.get(i)); // pass index here, list[index] syntax will not work here
         }
         System.out.println(list);
     }

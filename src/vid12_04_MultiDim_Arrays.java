@@ -32,13 +32,13 @@ public class vid12_04_MultiDim_Arrays {
         }
 
         // output
-//        for (int row = 0; row<arr.length; row++){
-//            // for each column in every row
-//            for (int col=0; col < arr[row].length; col++){
-//                System.out.print(arr[row][col] + " ");
-//            }
-//            System.out.println(); // it will make it to look like a matrix
-//        }
+        for (int row = 0; row<arr.length; row++){
+            // for each column in every row
+            for (int col=0; col < arr[row].length; col++){
+                System.out.print(arr[row][col] + " ");
+            }
+            System.out.println(); // it will make it to look like a matrix
+        }
 
          // output
 //        for (int row = 0; row<arr.length; row++){
