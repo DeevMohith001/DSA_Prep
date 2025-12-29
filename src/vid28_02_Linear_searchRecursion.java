@@ -6,8 +6,10 @@ public class vid28_02_Linear_searchRecursion {
         System.out.println(search(arr, 4, 0));
         System.out.println(searchIndex(arr, 18, 0));
         System.out.println(searchIndexLast(arr, 2, arr.length-1));
-        searchAllIndex(arr, 18, 0);
-        System.out.println(list);
+//        searchAllIndex(arr, 18, 0);
+//        System.out.println(list);
+
+        System.out.println(searchAllIndex(arr, 2, 0, new ArrayList<>()));
     }
 
     static boolean search(int[] arr, int target, int index){
@@ -52,6 +54,32 @@ public class vid28_02_Linear_searchRecursion {
         }
         searchAllIndex(arr, target, index+1);
     }
+
+    // find all index where arraylist will be inside parameters
+    static ArrayList<Integer> searchAllIndex(int[] arr, int target, int index, ArrayList<Integer> list){
+        if (index == arr.length){
+            return list;
+        }
+        if (arr[index] == target){
+            list.add(index);
+        }
+        return searchAllIndex(arr, target, index+1, list);
+    }
+
+    // arraylist as a function variable.
+    static ArrayList<Integer> searchAllIndex2(int[] arr, int target, int index){
+        ArrayList<Integer> list = new ArrayList<>();
+
+        if (index == arr.length){
+            return list;
+        }
+        // This will contain answer for that function call only
+        if (arr[index] == target){
+            list.add(index);
+        }
+        ArrayList<Integer> ansFromBelowCalls = searchAllIndex2(arr, target, index+1);
+
+        list.addAll(ansFromBelowCalls);
+        return list;
+    }
 }
-
-
