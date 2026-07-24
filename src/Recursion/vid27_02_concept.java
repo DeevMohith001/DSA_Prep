@@ -1,3 +1,5 @@
+package Recursion;
+
 public class vid27_02_concept {
     public static void main(String[] args) {
         fun(5);

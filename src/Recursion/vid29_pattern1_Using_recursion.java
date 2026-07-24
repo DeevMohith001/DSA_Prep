@@ -1,3 +1,5 @@
+package Recursion;
+
 public class vid29_pattern1_Using_recursion {
     public static void main(String[] args) {
         triangle2(4, 0);

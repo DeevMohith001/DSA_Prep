@@ -1,3 +1,5 @@
+package OOPs;
+
 public class vid37_OOP_01 {
     public static void main(String[] args) {
         // store 5 roll nos
@@ -14,8 +16,8 @@ public class vid37_OOP_01 {
         Student[] students = new Student[5];
 
         // just declaring
-//        Student kunal;
-//        kunal = new Student();
+//        OOPs.Student kunal;
+//        kunal = new OOPs.Student();
 
         Student kunal = new Student(15, "Kunal Kushwaha", 85.4f);
         Student rahul = new Student(18, "Rahul Rana", 90.3f);
@@ -77,12 +79,12 @@ class Student {
 
     Student () {
         // this is how you call a constructor from another constructor
-        // internally: new Student (13, "default person", 100.0f);
+        // internally: new OOPs.Student (13, "default person", 100.0f);
         this (13, "default person", 100.0f);
     }
 
 
-    // Student arpit = new Student(17, "Arpit", 89.7f);
+    // OOPs.Student arpit = new OOPs.Student(17, "Arpit", 89.7f);
     // here, this will be replaced with arpit
     Student (int rno, String name, float marks) {
         this.rno = rno;
