@@ -13,6 +13,6 @@ public class Human {
         this.name=name;
         this.salary=salary;
         this.married=married;
-        Human.population+=1;
+        Human.population+=1; // Access static variables only with class name, not the object name. It works with object but it's not conventional.
     }
 }
