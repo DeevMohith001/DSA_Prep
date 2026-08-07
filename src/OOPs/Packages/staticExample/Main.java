@@ -18,6 +18,13 @@ public class Main {
     }
     static void fun(){
 //        greeting(); // won't work due to same reason written above
+        // we cannot use this because it requires an instance but the function we are using in, it doesn't depend on instances
+
+        //we cannot access non-static stuff without referencing their instances in a static context
+
+        // hence here we are referencing it
+        Main obj = new Main();
+        obj.greeting();// non-static ---> object required
     }
     void greeting(){
         fun();
