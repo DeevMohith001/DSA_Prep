@@ -38,5 +38,10 @@ public class Main {
 // Above classes will have no knowledge of below classes. But below classes can have.
 
 //Types of Inheritance:
-// Single Inheritance ----> One class extends another class. Box --> BoxWeight
-// MultiLevel Inheritance ----> One class extends another class and another will extend another. Box --> BoxWeight --> BoxPrice.
+// 1. Single Inheritance ----> One class extends another class. Box --> BoxWeight
+// 2. MultiLevel Inheritance ----> One class extends another class and another will extend another. Box --> BoxWeight --> BoxPrice.
+// 3. Multiple Inheritance ---> One class extending more than one classes. A ---> C, B ---> C. Here A and B both are parent classes
+// Multiple Inheritance is not supported in Java because:
+// If 2 or more parent classes have the same variables or properties then child class will get confused, which one to call.
+// 4. Hierarchical Inheritance --> One class is inherited by many classes. A -->B, A --> C, A--->D.
+// 5. Hybrid Inheritance(Not in Java) --> Combination of single and multiple inheritance. A --> B, A --> C, B and C-->D.
