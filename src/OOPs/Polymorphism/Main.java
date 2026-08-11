@@ -31,3 +31,5 @@ public class Main {
 // Types of Polymorphism:
 // 1. Compile time/ Static Polymorphism--> Achieved via method overloading.
 //2. Runtime/ Dynamic Polymorphism --> Achieved via method overriding.
+
+// polymorphism doesn't applies on instance variables.

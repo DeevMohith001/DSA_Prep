@@ -2,7 +2,7 @@ package OOPs.inheritance;
 
 public class Main {
     public static void main(String[] args) {
-//        Box box = new Box(); // it will a function which has zero argument.
+        Box box = new Box(); // it will a function which has zero argument.
 //        System.out.println(box.l + " " + box.w + " " + box.h);
 //
 //        Box box1 = new Box(4); // it will a function which has one argument.
@@ -29,8 +29,11 @@ public class Main {
 //        BoxWeight box5 = new Box(2, 3,4 );
 //        System.out.println(box5);
 
-        BoxPrice box5 = new BoxPrice(2, 4, 8); // This will call a constructor which have 3 arguments
-        BoxPrice box6 = new BoxPrice(); // This will call a constructor with zero arguments
+//        BoxPrice box5 = new BoxPrice(2, 4, 8); // This will call a constructor which have 3 arguments
+//        BoxPrice box6 = new BoxPrice(); // This will call a constructor with zero arguments
+//        Box.greeting();
+        Box box6 = new BoxWeight();
+        box6.greeting(); // you can inherit but you cannot override.
     }
 }
 //A parent class can refer to a child class but child class cannot

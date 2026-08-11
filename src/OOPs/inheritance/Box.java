@@ -6,6 +6,13 @@ public class Box {
     double w;
     double weight;
 
+//    @Override // we can't override static methods.
+    // Static methods can be inherited but cannot be overridden
+    // Overriding depends on objects, static doesn't depends on objects hence static methods cannot be overridden.
+    static void greeting(){
+        System.out.println("Hey, I am in Box class. Greetings!");
+    }
+
     // This will be called if we pass no argument
     Box() {
         this.l = -1;
