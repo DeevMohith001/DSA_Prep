@@ -4,6 +4,7 @@ public class Box {
     double l;
     double h;
     double w;
+    double weight;
 
     // This will be called if we pass no argument
     Box() {
@@ -21,7 +22,8 @@ public class Box {
     }
 
     //  This will be called if we pass three argument
-    Box(double l, double b, double h){
+    Box(double l, double h, double w){
+        System.out.println("Box class constructor");
         this.l = l;
         this.h = h;
         this.w =w;

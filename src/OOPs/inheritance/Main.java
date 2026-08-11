@@ -15,5 +15,21 @@ public class Main {
         // For inheritance. For one argument
         BoxWeight box3 = new BoxWeight(2, 3, 4, 8);
         System.out.println(box3.h + " " + box3.weight);
+
+        // This is a reference type of box, it is referencing to an object of type boxWeight
+        Box box4 = new BoxWeight(2, 3, 4, 8);// here parent is refering to a child class.
+        System.out.println(box4.w);
+
+        // There are many variables in both parent and child classes
+        // you are given access to variables that are in the ref type i.e. BoxWeight
+        // hence, you should have access to weight variable
+        // this also means, that the ones you are trying to access should be initialized
+        // but here, when the obj itself is of type parent class, how will you call the constructor
+        // this is why it is showing error
+//        BoxWeight box5 = new Box(2, 3,4 );
+//        System.out.println(box5);
     }
 }
+//A parent class can refer to a child class but child class cannot
+
+// Above classes will have no knowledge of below classes. But below classes can have.
