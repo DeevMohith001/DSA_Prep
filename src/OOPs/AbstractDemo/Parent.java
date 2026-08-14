@@ -12,3 +12,5 @@ public abstract class Parent {
     abstract void career();
     abstract void partner();
 }
+
+// Abstract methods --> no body of the function allowed
