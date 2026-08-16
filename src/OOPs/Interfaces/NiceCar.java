@@ -12,14 +12,22 @@ public class NiceCar {
     }
 
     public void start(){
-        player.start();
+        engine.start();
+    }
+
+    public void stop(){
+        engine.stop();
     }
 
     public void startMusic(){
         player.start();
     }
 
-    public void upgradeEngine(Engine engine){
-        this.engine=engine;
+    public void stopMusic() {
+        player.stop();
+    }
+
+    public void upgradeEngine(){
+        this.engine=new ElectricEngine();
     }
 }
