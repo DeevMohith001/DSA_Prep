@@ -12,6 +12,7 @@ public class Main {
         System.out.println(Arrays.toString(twin.arr));
 
         twin.arr[0] = 100;
+        System.out.println(Arrays.toString(twin.arr));
         System.out.println(Arrays.toString(mohit.arr));
 
     }
