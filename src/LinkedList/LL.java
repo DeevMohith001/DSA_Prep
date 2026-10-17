@@ -82,6 +82,20 @@ public class LL {
         return val;
     }
 
+    public int delete(int index){
+        if (index==0){
+            return deleteFirst();
+        }
+        if (index== size-1){
+            deleteLast();
+        }
+
+        Node prev = get(index-1);
+        int val = prev.next.value;
+        prev.next = prev.next.next;
+        return val;
+    }
+
     public void display(){
         Node temp = head;
         while (temp!=null){
