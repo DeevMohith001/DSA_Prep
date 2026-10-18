@@ -28,6 +28,8 @@ public class Main {
 //        list.display();
 
         list.insertLast(99);
+
+        list.insert(8, 65);
         list.display();
     }
 }
