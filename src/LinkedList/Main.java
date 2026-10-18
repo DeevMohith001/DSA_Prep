@@ -38,5 +38,7 @@ public class Main {
         list.insert(19);
         list.insert(75);
         list.display();
+        list.delete(19);
+        list.display();
     }
 }
