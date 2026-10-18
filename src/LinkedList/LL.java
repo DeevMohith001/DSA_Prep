@@ -66,8 +66,9 @@ public class LL {
             if (node.value == value){
                 return node;
             }
+            node = node.next;
         }
-        return node;
+        return null;
     }
 
     public int deleteFirst(){
